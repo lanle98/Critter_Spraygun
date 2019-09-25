@@ -1,0 +1,253 @@
+//sass --watch sass:css --style compressed
+
+@import "modules/navbar.scss";
+@import "vars.scss";
+
+.hidden {
+  display: none;
+}
+
+body {
+  background: #ffff;
+}
+
+h2 {
+  font-size: 40px;
+  color: $theme-color;
+  margin: 40px 20px;
+}
+
+.logo {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: #ffff;
+  padding: 20px 0;
+  justify-content: center;
+
+  img {
+    width: 30vw;
+  }
+
+  .hamburger-menu {
+    position: absolute;
+    right: 0;
+    .bar {
+      background: $theme-color;
+      width: 50px;
+      height: 8px;
+      margin: 5px;
+      border-radius: 10px;
+    }
+  }
+}
+
+.hero {
+  img {
+    width: 100vw;
+  }
+}
+
+main {
+  max-width: 1440px;
+  margin: 0 auto;
+  margin: 0 10px;
+}
+
+.promo-video {
+  iframe {
+    width: 100%;
+    height: 500px;
+  }
+}
+
+.easy-to-use {
+  .steps {
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+  }
+
+  .step {
+    background: black;
+    margin: 10px 20px;
+    width: 100%;
+    height: 200px;
+    position: relative;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    p {
+      position: absolute;
+      background: $theme-color-low-opacity;
+      bottom: 0;
+      text-align: left;
+      padding: 10px;
+    }
+  }
+}
+
+.easy-to-clean {
+  p {
+    color: $theme-color;
+  }
+  img {
+    width: 100%;
+  }
+}
+
+.feature-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  .feature {
+    width: 250px;
+    height: 250px;
+    background: $theme-color;
+    margin: 20px 10px;
+  }
+}
+
+.distributors {
+  h4,
+  p {
+    color: $black;
+    line-height: 5vw;
+  }
+
+  h3 {
+    color: $black;
+    font-size: 4vw;
+    line-height: 6vw;
+  }
+
+  h4 {
+    font-size: 3vw;
+  }
+
+  p {
+    font-size: 2vw;
+  }
+
+  img {
+    margin: 20px;
+    width: 30vw;
+  }
+
+  .text-wrapper {
+    display: flex;
+    margin: 20px;
+  }
+
+  .border {
+    height: 15vw;
+    width: 2px;
+    background: $black;
+    position: absolute;
+    left: 50vw;
+  }
+
+  .description {
+    position: absolute;
+    left: 3vw;
+    h4,
+    p {
+      text-align: right;
+    }
+  }
+
+  .catalogue {
+    position: absolute;
+    right: 25vw;
+  }
+
+  .amazon {
+    height: 50vw;
+  }
+
+  .highland,
+  .leevalley {
+    height: 70vw;
+    .border {
+      height: 25vw;
+    }
+  }
+}
+.project-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  .project {
+    background: $theme-color;
+    border-radius: 5px;
+
+    width: 280px;
+    margin: 20px;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+
+    p {
+      padding: 20px 40px;
+      font-size: 15px;
+    }
+  }
+}
+
+.replacement {
+  width: 90vw;
+  img {
+    width: 100%;
+  }
+}
+
+footer {
+  background: $theme-color;
+  // display: flex;
+  justify-content: space-between;
+  padding: 40px;
+
+  .wrapper-left {
+    display: flex;
+    flex-direction: column;
+
+    img {
+      margin: 10px 0;
+    }
+  }
+
+  .navBar {
+    display: block;
+
+    li {
+      padding: 20px;
+      font-size: 25px;
+    }
+  }
+
+  .e-mail {
+    background: #f5a623;
+
+    height: 80px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+    h4 {
+      font-weight: normal;
+    }
+    span {
+      font-weight: bold;
+    }
+  }
+}
