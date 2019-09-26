@@ -1,1 +1,1 @@
-.navBar{display:none}/*# sourceMappingURL=navbar.css.map */
+.navBar-desktop,.navBar-mobile{display:none}@media screen and (min-width: 768px){.navBar-desktop{display:block;background:#0fa2b7;padding:10px 0}.navBar-desktop ul{display:flex;justify-content:space-around}.hamburger-menu{display:none}}/*# sourceMappingURL=navbar.css.map */
