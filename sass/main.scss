@@ -13,6 +13,11 @@ body {
   overflow-x: hidden;
 }
 
+li,
+.yellow-btn {
+  cursor: pointer;
+}
+
 h2 {
   font-size: 40px;
   color: $theme-color;
@@ -257,7 +262,7 @@ main {
   background: #f5a623;
   width: 200px;
   height: 80px;
-  margin: 40px auto;
+  margin: 20px auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -286,6 +291,7 @@ footer {
   .wrapper-left {
     display: flex;
     flex-direction: column;
+    justify-content: center;
 
     img {
       margin: 10px 0;
@@ -336,6 +342,8 @@ footer {
 
   footer {
     display: flex;
+    padding: 20px;
+    height: 200px;
 
     .navBar {
       ul {
@@ -344,7 +352,14 @@ footer {
 
       li {
         font-size: 20px;
+        padding: 0px 40px;
       }
+    }
+
+    .wrapper-right {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
 
     .yellow-btn {

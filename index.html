@@ -10,10 +10,8 @@
     />
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
     <link rel="stylesheet" href="css/main.css" />
-    
-
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/ScrollToPlugin.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/ScrollToPlugin.min.js"></script>
     <title>Critter Spraygun</title>
   </head>
   <body>
@@ -33,18 +31,18 @@
       <div class="navBar-desktop">
         <h2 class="hidden">Navigation Bar</h2>
         <ul>
-          <li>Feature</li>
-          <li>Ideal Projects</li>
-          <li>Videos</li>
+          <li class="scrollTo">Feature</li>
+          <li class="scrollTo">Projects</li>
+          <li class="scrollTo">Videos</li>
         </ul>
       </div>
 
       <div class="navBar-mobile">
             <h2 class="hidden">Navigation Bar</h2>
             <ul>
-              <li>Feature</li>
-              <li>Ideal Projects</li>
-              <li>Videos</li>
+              <li class="scrollTo">Feature</li>
+              <li class="scrollTo">Ideal Projects</li>
+              <li class="scrollTo">Videos</li>
             </ul>
       </div>
 
@@ -93,7 +91,7 @@
         <img src="images/gun.jpg" alt="easy to clean"/>
       </section>
 
-      <section class="features">
+      <section class="features Feature">
         <h2 class="title">Features</h2>
         <div class="feature-wrapper">
         <div class="feature">
@@ -202,7 +200,7 @@
         </div>
       </section>
 
-      <section class="projects">
+      <section class="projects Projects">
         <h2>Projects</h2>
         <div class="project-wrapper">
         
@@ -216,7 +214,7 @@
 
       </section>
 
-      <section class="instruction-video">
+      <section class="instruction-video Videos">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/DmfDdNSearE" allowfullscreen></iframe>
         <div class="description yellow-btn">Show Description</div>
       </section>
@@ -226,16 +224,16 @@
       <h1 class="hidden">Footer</h1>
       <div class="wrapper-left">
           <img src="images/critter_logo_2.svg" alt="Logo" />
-          <img src="images/youtube.svg" alt="youtube">
+          <a href="https://www.youtube.com/user/crittersprayproducts"><img src="images/youtube.svg" alt="youtube"></a>
       </div>
 
       <div class="wrapper-right">
         <div class="navBar">
           <h2 class="hidden">Navigation Bar</h2>
           <ul>
-            <li>Feature</li>
-            <li>Ideal Projects</li>
-            <li>Videos</li>
+            <li class="scrollTo">Feature</li>
+            <li class="scrollTo">Projects</li>
+            <li class="scrollTo">Videos</li>
           </ul>
         </div>
         <div class="yellow-btn"><h4>HAVE QUESTIONS ?<br>
@@ -243,6 +241,7 @@
       </div>
     </footer>
     <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/scrollTo.js"></script>
 
   </body>
 </html>
