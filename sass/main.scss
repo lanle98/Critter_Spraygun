@@ -283,6 +283,10 @@ main {
   width: 100vw;
   margin: 40px 0px;
 
+  svg {
+    width: 100%;
+  }
+
   .partInfo {
     width: 100%;
     background: $theme-color;
