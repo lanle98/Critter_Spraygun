@@ -282,7 +282,19 @@ main {
 .replacement {
   width: 100vw;
   margin: 40px 0px;
-  img {
+
+  .partInfo {
+    width: 100%;
+    background: $theme-color;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px 0;
+
+    p {
+      text-align: center;
+    }
   }
 }
 

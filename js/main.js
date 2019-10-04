@@ -1,9 +1,26 @@
 import Project from "./modules/projects_objects.js";
+import Replacement from "./modules/replacement_objects.js";
 
 (() => {
   console.log("fired!");
   let project_wrapper = document.querySelector(".project-wrapper");
   let showAll = document.querySelector(".showAll");
+  let clickable = document.querySelectorAll(".clickable");
+  console.log(clickable);
+
+  function replacementParts(a) {
+    console.log(a);
+  }
+  clickable.forEach((e, index) =>
+    e.addEventListener("click", function() {
+      console.log(index);
+      let name = document.querySelector(".partInfo h3");
+      let partNo = document.querySelector(".partInfo p");
+
+      name.innerHTML = Replacement[index].name;
+      partNo.innerHTML = `Part No: ${Replacement[index].no}`;
+    })
+  );
 
   for (let pro in Project) {
     console.log(pro);
