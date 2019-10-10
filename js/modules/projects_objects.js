@@ -2,7 +2,7 @@ const projects = {
   project1: {
     img: "images/project1.jpg",
     p:
-      "Shown here is a oil based satin polyrethaned finish being applied to this oak mission style bench. Take note of the metal can used rather than the glass mason jar. A small paint can wi wa drilled out and screwed onto the bottom of the gun. ( spray right out of the can )"
+      "Shown here is a oil based polyrethane finish being applied to this oak mission style bench. Take note of the metal can used rather than the glass mason jar. A small paint can was drilled out and screwed onto the bottom of the gun. ( spray right out of the can )"
   },
 
   project2: {
@@ -32,7 +32,7 @@ const projects = {
   project7: {
     img: "images/project7.jpg",
     p:
-      "This solid live edge bench was broght to life with several coats of a fast dry polyurethane"
+      "This live edge bench was brought to life with several coats of a fast dry polyurethane"
   },
   project8: {
     img: "images/project8.jpg",
@@ -47,7 +47,7 @@ const projects = {
   project10: {
     img: "images/project10.jpg",
     p:
-      "Used in the upholstery industry for over 30 years spraying for Foam and Fabric adhesives"
+      "Used in the upholstery industry over 30 years spraying for Foam and Fabric adhesives"
   },
   project11: {
     img: "images/project11.jpg",

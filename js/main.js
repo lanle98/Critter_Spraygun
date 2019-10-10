@@ -12,13 +12,26 @@ import Replacement from "./modules/replacement_objects.js";
     console.log(a);
   }
   clickable.forEach((e, index) =>
-    e.addEventListener("click", function() {
+    e.addEventListener("mouseover", function() {
       console.log(index);
       let name = document.querySelector(".partInfo h3");
       let partNo = document.querySelector(".partInfo p");
+      let partInfo = document.querySelector(".partInfo");
+      let img = document.querySelector(".partInfo img");
 
+      partInfo.classList.add("popUp");
+
+      img.src = `images/replacement_parts/${Replacement[index].img}.gif`;
       name.innerHTML = Replacement[index].name;
       partNo.innerHTML = `Part No: ${Replacement[index].no}`;
+    })
+  );
+
+  clickable.forEach((e, index) =>
+    e.addEventListener("mouseout", function() {
+      let partInfo = document.querySelector(".partInfo");
+
+      partInfo.classList.remove("popUp");
     })
   );
 
@@ -29,6 +42,7 @@ import Replacement from "./modules/replacement_objects.js";
 
     //add className for project
     project.className = "project";
+    project.className += " boxShadow";
 
     project.innerHTML = `<img src="images/projects/${pro}.jpg" alt="${pro}" />`;
     project.innerHTML += `<p>${Project[pro].p}</p>`;

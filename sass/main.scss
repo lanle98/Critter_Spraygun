@@ -2,7 +2,7 @@
 
 @import "modules/navbar.scss";
 @import "modules/vars.scss";
-
+@import "modules/boxShadow.scss";
 .hidden {
   display: none;
 }
@@ -282,23 +282,43 @@ main {
 .replacement {
   width: 100vw;
   margin: 40px 0px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   svg {
     width: 100%;
+    position: relative;
   }
 
   .partInfo {
-    width: 100%;
+    display: none;
+    width: 30%;
     background: $theme-color;
-    height: 200px;
-    display: flex;
+
     flex-direction: column;
     justify-content: center;
     margin: 20px 0;
+    position: absolute;
+    z-index: 1;
 
+    h3,
     p {
       text-align: center;
+      padding: 20px;
     }
+
+    img {
+      background: white;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .popUp {
+    display: flex;
   }
 }
 
