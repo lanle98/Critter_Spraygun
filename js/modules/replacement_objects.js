@@ -35,9 +35,9 @@ const replacementParts = {
     img: "valvespring"
   },
   7: {
-    name: "Packing",
+    name: "O-Ring",
     no: 21518,
-    img: "packing"
+    img: "oring"
   },
   8: {
     name: "Air Nozzle",
