@@ -53,7 +53,7 @@ import Replacement from "./modules/replacement_objects.js";
   let projects_children = project_wrapper.children;
   let projects_childNodes = project_wrapper.childNodes;
 
-  for (let i = 4; i <= projects_children.length; i++) {
+  for (let i = 3; i <= projects_children.length; i++) {
     projects_childNodes[i].className += " show-hide";
     function showProjects() {
       projects_childNodes[i].classList.toggle("show-hide");
