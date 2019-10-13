@@ -6,7 +6,11 @@ import Replacement from "./modules/replacement_objects.js";
   let project_wrapper = document.querySelector(".project-wrapper");
   let showAll = document.querySelector(".showAll");
   let clickable = document.querySelectorAll(".clickable");
-  console.log(clickable);
+  let close = document.querySelector(".partInfo span");
+  let name = document.querySelector(".partInfo h3");
+  let partNo = document.querySelector(".partInfo p");
+  let partInfo = document.querySelector(".partInfo");
+  let img = document.querySelector(".partInfo img");
 
   function replacementParts(a) {
     console.log(a);
@@ -14,10 +18,6 @@ import Replacement from "./modules/replacement_objects.js";
   clickable.forEach((e, index) =>
     e.addEventListener("mouseover", function() {
       console.log(index);
-      let name = document.querySelector(".partInfo h3");
-      let partNo = document.querySelector(".partInfo p");
-      let partInfo = document.querySelector(".partInfo");
-      let img = document.querySelector(".partInfo img");
 
       partInfo.classList.add("popUp");
 
@@ -27,13 +27,9 @@ import Replacement from "./modules/replacement_objects.js";
     })
   );
 
-  clickable.forEach((e, index) =>
-    e.addEventListener("mouseout", function() {
-      let partInfo = document.querySelector(".partInfo");
-
-      partInfo.classList.remove("popUp");
-    })
-  );
+  close.addEventListener("click", function() {
+    partInfo.classList.remove("popUp");
+  });
 
   for (let pro in Project) {
     console.log(pro);

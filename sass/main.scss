@@ -295,7 +295,7 @@ main {
 
   .partInfo {
     display: none;
-    width: 30%;
+    width: 50%;
     background: $theme-color;
 
     flex-direction: column;
@@ -303,6 +303,16 @@ main {
     margin: 20px 0;
     position: absolute;
     z-index: 1;
+
+    span {
+      position: absolute;
+      right: 0;
+      top: 0;
+      color: $theme-color;
+      margin: 20px;
+      font-size: 20px;
+      cursor: pointer;
+    }
 
     h3,
     p {
@@ -433,6 +443,12 @@ footer {
 
     .project {
       margin: 20px auto;
+    }
+  }
+
+  .replacement {
+    .partInfo {
+      width: 30%;
     }
   }
 }
