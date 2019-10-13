@@ -40,6 +40,11 @@ const replacementParts = {
     img: "oring"
   },
   8: {
+    name: "Liquid Nozzle",
+    no: 20621,
+    img: "airnozzle"
+  },
+  9: {
     name: "Air Nozzle",
     no: 21038,
     img: "airnozzle"
