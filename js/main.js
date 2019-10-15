@@ -8,7 +8,8 @@ import Replacement from "./modules/replacement_objects.js";
   let clickable = document.querySelectorAll(".clickable");
   let close = document.querySelector(".partInfo span");
   let name = document.querySelector(".partInfo h3");
-  let partNo = document.querySelector(".partInfo p");
+  let partNo = document.querySelector(".partInfo h4");
+  let partDesc = document.querySelector(".partInfo p");
   let partInfo = document.querySelector(".partInfo");
   let img = document.querySelector(".partInfo img");
 
@@ -24,6 +25,7 @@ import Replacement from "./modules/replacement_objects.js";
       img.src = `images/replacement_parts/${Replacement[index].img}.gif`;
       name.innerHTML = Replacement[index].name;
       partNo.innerHTML = `Part No: ${Replacement[index].no}`;
+      partDesc.innerHTML = `${Replacement[index].description}`;
     })
   );
 
