@@ -60,6 +60,10 @@ h2 {
     width: 100%;
     object-fit: contain;
   }
+
+  .promo_desktop {
+    display: none;
+  }
 }
 
 main {
@@ -359,6 +363,16 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
+  .hero {
+    .promo_desktop {
+      display: block;
+    }
+
+    .promo_mobile {
+      display: none;
+    }
+  }
+
   .easy-to-use {
     .steps {
       justify-content: center;
