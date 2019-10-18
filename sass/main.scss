@@ -259,6 +259,7 @@ main {
       padding: 20px 40px;
       font-size: 15px;
       height: 250px;
+      font-weight: 700;
     }
   }
 
@@ -364,6 +365,11 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
+  .logo {
+    img {
+      width: 30vw;
+    }
+  }
   .hero {
     .promo_desktop {
       display: block;

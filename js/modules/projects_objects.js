@@ -1,7 +1,8 @@
 const projects = {
   project1: {
     img: "images/project1.jpg",
-    p: "Freshen up that wicker furniture with a quick coat Latex enamel paint."
+    p:
+      "Freshen up that wicker furniture with a quick coat of latex enamel paint."
   },
 
   project2: {
@@ -51,7 +52,7 @@ const projects = {
   project11: {
     img: "images/project11.jpg",
     p:
-      "Shown here is a oil based polyrethane finish being applied to this oak mission style bench. Take note of the metal can used rather than the glass mason jar. A small paint can was drilled out and screwed onto the bottom of the gun. ( spray right out of the can )"
+      "Shown here is a oil based polyurethane finish being applied to this bench. Take note of the metal can used rather than the glass mason jar. A small paint can was drilled out and screwed onto the bottom of the gun. ( spray right out of the can )"
   }
 };
 export default projects;
