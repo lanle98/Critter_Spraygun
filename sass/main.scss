@@ -179,7 +179,7 @@ main {
   }
 
   h3 {
-    color: $black;
+    color: $theme-color !important;
     font-size: 4vw;
     line-height: 6vw;
   }
@@ -195,6 +195,12 @@ main {
   img {
     margin: 20px;
     width: 30vw;
+  }
+
+  .leevalley {
+    img {
+      width: 50vw;
+    }
   }
 
   .text-wrapper {
@@ -237,11 +243,17 @@ main {
   }
 }
 
+.projects {
+  h2 {
+    margin-top: 0;
+  }
+}
 .project-wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+
   .project {
     background: $theme-color;
     border-radius: 5px;
